@@ -13,11 +13,12 @@ html, body{
 	text-align: center;
 }
 
-#footer-push, #footer{
+#footer-push, #footer, #menu{
 	height: 50px;
 	clear: both;
 }
 
 #footer{
 	margin-top: -50px;
+	line-height: 50px;
 }
