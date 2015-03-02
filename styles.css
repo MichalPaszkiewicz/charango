@@ -7,7 +7,7 @@ html, body{
 	min-height: 100%;
 }
 
-#menu, #footer{
+#menu, #footer, #menu a, #footer a{
 	background: black;
 	color: white;
 	text-align: center;
