@@ -14,6 +14,10 @@ html, body{
 	display: inline-block;
 }
 
+#menu a:hover{
+	background: rgb(55, 55, 55);
+}
+
 #menu, #footer, #menu a, #footer a{
 	background: black;
 	color: white;
