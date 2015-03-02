@@ -7,6 +7,13 @@ html, body{
 	min-height: 100%;
 }
 
+#menu a{
+	height: 50px;
+	line-height: 50px;
+	min-width: 100px;
+	display: inline-block;
+}
+
 #menu, #footer, #menu a, #footer a{
 	background: black;
 	color: white;
