@@ -24,12 +24,12 @@ html, body{
 	background: rgb(55, 55, 55);
 }
 
-#menu, #footer, #menu a, #footer a{
+#header, #footer, #menu a, #footer a{
 	background: black;
 	color: white;
 }
 
-#footer-push, #footer, #menu{
+#footer-push, #footer, #header{
 	height: 50px;
 	clear: both;
 }
