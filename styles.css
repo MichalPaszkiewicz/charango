@@ -10,6 +10,7 @@ html, body{
 #menu, #footer{
 	background: black;
 	color: white;
+	text-align: center;
 }
 
 #footer-push, #footer{
