@@ -9,6 +9,7 @@ html, body{
 
 #menu{
 	float: right;
+	width: 100%;
 }
 
 #menu a{
@@ -16,6 +17,7 @@ html, body{
 	line-height: 50px;
 	min-width: 100px;
 	display: inline-block;
+	text-align: center;
 }
 
 #menu a:hover{
