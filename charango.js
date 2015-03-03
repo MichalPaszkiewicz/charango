@@ -14,7 +14,7 @@ var charangoModule = angular.module('app', []).
 		$scope.getSearchObjects = function(){
 			var search = location.search;
 			if( search  == null || search == ""){
-				return [{view:"home"}];
+				return {view:"home"};
 			}
 			
 			var searches = search.substring(1).split("&");
