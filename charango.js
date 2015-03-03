@@ -32,4 +32,28 @@ var charangoModule = angular.module('app', []).
 		}
 		
 		$scope.view = $scope.getSearchObjects().view;
+		
+		$scope.customChord = { strings: [{tuning: "g", value: 0},{tuning: "c", value: 0},{tuning: "e", value: 0},{tuning: "a", value: 0},{tuning: "e", value: 0}] };
+		
+		var initialiseCustomChord = function(){
+			var chord = $scope.getSearchObjects().chord;
+			if(chord == null || chord == undefined){
+				return;
+			}
+			
+			var notes = chord.split("+");
+			for(var i = 0; i < 5; i++){
+				$scope.customChord.strings[i].value=~~notes[i];
+			}
+		}
+		initialiseCustomChord();
+		
+		$scope.customChordLink = function(){
+			var linkString = location.host + location.pathname;
+			linkString += "?view=custom&chord=";
+			for( var string in $scope.customChord.strings){
+				linkString += $scope.customChord.strings[string].value + "+";
+			}
+			return linkString;
+		}
 	});
