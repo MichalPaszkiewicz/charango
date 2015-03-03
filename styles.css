@@ -4,6 +4,11 @@ html, body{
 	font-family: sans-serif;
 }
 
+canvas{
+	margin: auto;
+	display: block;
+}
+
 h1{
 	text-align: center;
 }
@@ -103,6 +108,8 @@ p{
 	overflow: hidden;
 	z-index: 2;
 	position: relative;
+	max-width: 800px;
+	margin: auto;
 }
 
 
