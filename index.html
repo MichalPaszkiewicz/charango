@@ -29,6 +29,7 @@
 					<a id="burger-bar" ng-click="burger = !burger">=</a>
 					<span id="menu-items" ng-show="burger">
 						<a ng-click="go('home')">Home</a>
+						<a ng-click="go('custom')">Custom</a>
 						<a ng-click="go('chords')">Chords</a>
 						<a ng-click="go('about')" href="">About</a>
 					</span>
@@ -44,6 +45,11 @@
 			
 			<div class="view" ng-show="view == 'chords'">
 				<h1>Chords</h1>
+			</div>
+			
+			<div class="view" ng-show="view == 'custom'">
+				<h1>Custom chords</h1>
+				<p>Use this tool to send a friend a custom charango chord.</p>
 			</div>
 			
 			<div class="view" ng-show="view == 'about'">
