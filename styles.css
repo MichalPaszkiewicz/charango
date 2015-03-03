@@ -99,6 +99,10 @@ input[type*=number]{
 	z-index: 5;
 }
 
+#footer-push{
+	margin-top: 50px;
+}
+
 #footer{
 	margin-top: -50px;
 	line-height: 50px;
@@ -128,6 +132,11 @@ input[type*=number]{
 	margin: auto;
 }
 
-
+.string-name{
+	width:50px; 
+	display:inline-block; 
+	text-align: center; 
+	text-transform: uppercase;
+}
 
 

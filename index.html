@@ -10,7 +10,7 @@
 		<script src="vexflow.min.js"></script>
 		<script src="vexflow-helper.js"></script>
 		<script src="anychord.js"></script>
-		<script src="charango.js"></script>
+		
 		
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,8 +52,17 @@
 				<canvas id="my-canvas" width=300 height=100></canvas>
 			</div>
 			
-			<div id="chords-view" class="view" ng-show="view == 'chords'">
+			<div id="chords-view" class="view" style="max-width:none;" ng-show="view == 'chords'">
 				<h1>Chords</h1>
+				
+				<div class="chord-container" style="width:250px; display:inline-block; margin:5px;" ng-repeat="chord in chords">
+					<h1>{{chord.name}}</h1>
+					<div>
+						<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
+						<canvas id="{{chord.name}}" height=300 width=250></canvas>
+					</div>
+				</div>
+				
 			</div>
 			
 			<div id="custom-view" class="view" ng-show="view == 'custom'">
@@ -65,7 +74,7 @@
 					<input type="text" ng-model="customChord.label"/>
 					<p>Frets:</p>
 					<input type="number" min=0 ng-repeat="string in customChord.strings" ng-model="string.value"/>
-					<b style="width:50px; display:inline-block; text-align: center; text-transform: uppercase;" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
+					<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
 					<canvas id="custom-chord" height=300 width=250></canvas>
 					
 				</div>
@@ -77,12 +86,14 @@
 			
 			<div id="about-view" class="view" ng-show="view == 'about'">
 				<h1>About</h1>
-				Made by <a href="../" alt="Michal Paszkiewicz home site">Michal Paszkiewicz</a>
+				Made by <a href="../" alt="Michal Paszkiewicz home site">Michal Paszkiewicz</a>, a keen charanguista (player of charangos), guitarist and software developer.
 			</div>
 			
 			<div id="footer-push"></div>
 		</div>
 		<div id="footer">Made by <a href="../" alt="Michal Paszkiewicz home site">Michal Paszkiewicz</a></div>
+		
+		<script src="charango.js"></script>
 		
 		<script>
 			drawCharangoTuning("my-canvas");
