@@ -21,6 +21,18 @@ html, body{
 	cursor: pointer;
 }
 
+@media (min-width: 800px) {
+	#menu #burger-bar{
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	#menu a {
+		display: block;
+	}
+}
+
 #menu a:hover{
 	background: rgb(55, 55, 55);
 }
