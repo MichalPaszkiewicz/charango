@@ -71,6 +71,19 @@ input[type*=number]{
 	}
 }
 
+.chord-container{
+	width:250px; 
+	display:inline-block; 
+	margin:5px;
+}
+
+@media (max-width: 500px){
+	.chord-container{
+		margin: auto;
+		display:block;
+	}
+}
+
 #menu a:hover{
 	background: rgb(55, 55, 55);
 }

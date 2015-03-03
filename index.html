@@ -55,7 +55,7 @@
 			<div id="chords-view" class="view" style="max-width:none;" ng-show="view == 'chords'">
 				<h1>Chords</h1>
 				
-				<div class="chord-container" style="width:250px; display:inline-block; margin:5px;" ng-repeat="chord in chords">
+				<div class="chord-container" ng-repeat="chord in chords">
 					<h1>{{chord.name}}</h1>
 					<div>
 						<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
