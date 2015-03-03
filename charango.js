@@ -6,7 +6,7 @@ var charangoModule = angular.module('app', []).
 		$scope.go = function(view){
 			$scope.view = view;
 			$scope.burger = false;
-			var newSearch = location.host + location.pathname + "?" + 'view=' + view;
+			var newSearch = "?" + 'view=' + view;
 			window.history.pushState(null, null, newSearch);
 			$scope.link = location.href;
 		}
