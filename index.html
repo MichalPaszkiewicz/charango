@@ -22,6 +22,8 @@
 		</script>
 	</head>
 	<body>
+		<div id="background"></div>
+	
 		<div  id="main-container" ng-controller="pageControl">
 			<div id="header">
 				<h1>Charango</h1>
@@ -38,21 +40,24 @@
 			
 			<div id=header-push></div>
 			
-			<div class="view" ng-show="view == 'home'">
+			<div id="home-view" class="view" ng-show="view == 'home'">
 				<h1>Home</h1>
+				<h2>Origins</h2>
+				<p>The charango is an instrument originating in South America. It is a descendant of some form of stringed instrument brought over to South America by the Conquistadores.</p>
+				<p>Originally the charango would have been made from the shell of the back of an Armadillo, however, modern Charangos are usually made of wood, which is a much better resonator (and is far more ethical).</p>
 				<canvas id="my-canvas" width=300 height=100></canvas>
 			</div>
 			
-			<div class="view" ng-show="view == 'chords'">
+			<div id="chords-view" class="view" ng-show="view == 'chords'">
 				<h1>Chords</h1>
 			</div>
 			
-			<div class="view" ng-show="view == 'custom'">
+			<div id="custom-view" class="view" ng-show="view == 'custom'">
 				<h1>Custom chords</h1>
 				<p>Use this tool to send a friend a custom charango chord.</p>
 			</div>
 			
-			<div class="view" ng-show="view == 'about'">
+			<div id="about-view" class="view" ng-show="view == 'about'">
 				<h1>About</h1>
 				Made by <a href="../" alt="Michal Paszkiewicz home site">Michal Paszkiewicz</a>
 			</div>
