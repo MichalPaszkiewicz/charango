@@ -25,6 +25,10 @@ html, body{
 	#menu #burger-bar{
 		display: none;
 	}
+	
+	#menu #menu-items{
+		display: block !important;
+	}
 }
 
 @media (max-width: 800px) {
