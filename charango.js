@@ -33,10 +33,14 @@ var charangoModule = angular.module('app', []).
 		
 		$scope.view = $scope.getSearchObjects().view;
 		
-		$scope.customChord = { strings: [{tuning: "g", value: 0},{tuning: "c", value: 0},{tuning: "e", value: 0},{tuning: "a", value: 0},{tuning: "e", value: 0}] };
+		$scope.customChord = { 
+			strings: [{tuning: "g", value: 0},{tuning: "c", value: 0},{tuning: "e", value: 0},{tuning: "a", value: 0},{tuning: "e", value: 0}],
+			label: "Custom chord"
+		};
 		
 		var initialiseCustomChord = function(){
-			var chord = $scope.getSearchObjects().chord;
+			var searchObjects = $scope.getSearchObjects();
+			var chord = searchObjects.chord;
 			if(chord == null || chord == undefined){
 				return;
 			}
@@ -45,6 +49,8 @@ var charangoModule = angular.module('app', []).
 			for(var i = 0; i < 5; i++){
 				$scope.customChord.strings[i].value=~~notes[i];
 			}
+			
+			$scope.customChord.label = searchObjects.label;
 		}
 		initialiseCustomChord();
 		
@@ -54,6 +60,9 @@ var charangoModule = angular.module('app', []).
 			for( var string in $scope.customChord.strings){
 				linkString += $scope.customChord.strings[string].value + "+";
 			}
+			
+			linkString += "?label=" + $scope.customChord.label;
+			
 			return linkString;
 		}
 	});

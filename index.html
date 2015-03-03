@@ -61,13 +61,17 @@
 				<p>Use this tool to send a friend a custom charango chord.</p>
 				
 				<div style="margin:auto; width: 250px">
+					<p>Label:</p>
+					<input type="text" ng-model="customChord.label"/>
+					<p>Frets:</p>
 					<input type="number" min=0 ng-repeat="string in customChord.strings" ng-model="string.value"/>
+					<p>Display:</p>
 					<canvas id="custom-chord"></canvas>
 					
 				</div>
 				
 				<p>Send this link to a friend to show them the above chord:</p>
-				<input type="text" style="width: 100%;" ng-value="customChordLink()" />
+				<input type="text" ng-value="customChordLink()" />
 				<p></p>
 			</div>
 			
