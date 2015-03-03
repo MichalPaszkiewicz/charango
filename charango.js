@@ -54,7 +54,37 @@ var charangoModule = angular.module('app', []).
 		}
 		initialiseCustomChord();
 		
+		$scope.drawChord = function(id, notes){
+			var canvas = document.getElementById(id);
+			var ctx = canvas.getContext("2d");
+			
+			ctx.clearRect(0,0,canvas.width, canvas.height);
+			
+			ctx.beginPath();
+			for(var i = 0; i < 5; i++){
+				ctx.moveTo(i*50 + 20,40);
+				ctx.lineTo(i*50 + 20,300);
+				ctx.moveTo(i*50 + 30,40);
+				ctx.lineTo(i*50 + 30,300);
+				ctx.stroke();
+				
+				var yPos = notes[i].value * 40 + 20;
+				
+				ctx.beginPath();
+				ctx.arc(i*50 + 25,yPos,10,0,2*Math.PI);
+				ctx.fill();
+			}
+			
+			for(var i = 0; i < 7; i++){
+				var yPos = 40 + 40*i;
+				ctx.moveTo(20, yPos);
+				ctx.lineTo(230, yPos);
+				ctx.stroke();
+			}
+		}
+		
 		$scope.customChordLink = function(){
+			$scope.drawChord("custom-chord", $scope.customChord.strings);
 			var linkString = location.host + location.pathname;
 			linkString += "?view=custom&chord=";
 			for( var string in $scope.customChord.strings){

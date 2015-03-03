@@ -65,8 +65,8 @@
 					<input type="text" ng-model="customChord.label"/>
 					<p>Frets:</p>
 					<input type="number" min=0 ng-repeat="string in customChord.strings" ng-model="string.value"/>
-					<p>Display:</p>
-					<canvas id="custom-chord"></canvas>
+					<b style="width:50px; display:inline-block; text-align: center; text-transform: uppercase;" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
+					<canvas id="custom-chord" height=300 width=250></canvas>
 					
 				</div>
 				
