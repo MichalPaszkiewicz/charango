@@ -95,7 +95,7 @@ h1{
 }
 
 .view{
-	padding: 0 20px;
+	padding: 0 10px;
 	overflow: hidden;
 	z-index: 2;
 	position: relative;
