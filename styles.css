@@ -78,6 +78,7 @@ h1{
 	margin-top: -50px;
 	line-height: 50px;
 	text-align: center;
+	position:relative;
 }
 
 #background{
