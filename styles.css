@@ -17,6 +17,8 @@ html, body{
 	min-width: 100px;
 	display: inline-block;
 	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 #menu a:hover{
