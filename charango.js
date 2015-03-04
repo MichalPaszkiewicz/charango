@@ -159,7 +159,7 @@ var charangoModule = angular.module('app', []).
 		}
 		
 		$scope.waitDrawAll = function(){
-			$timeout(function(){$scope.go("chords")}, 100);
+			$timeout(function(){$scope.go("chords")}, 200);
 		}
 		
 		if($scope.view=="chords"){
