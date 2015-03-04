@@ -15,6 +15,14 @@ var charangoModule = angular.module('app', []).
 			}
 		}
 		
+		$scope.searchNote = "";
+		
+		$scope.searchType = "";
+		
+		$scope.getSearchText = function(){
+			return $scope.searchNote + $scope.searchType;
+		}
+		
 		$scope.getSearchObjects = function(){
 			var search = location.search;
 			if( search  == null || search == ""){
