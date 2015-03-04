@@ -56,7 +56,7 @@
 				<h1>Chords</h1>
 				<input type="text" ng-model="searchNote" />
 				
-				<div class="chord-container" ng-repeat="chord in chords | getSearchText()">
+				<div class="chord-container" ng-repeat="chord in chords | filter:getSearchText()">
 					<h1>{{chord.name}}</h1>
 					<div>
 						<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
