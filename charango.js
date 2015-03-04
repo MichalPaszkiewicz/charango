@@ -70,6 +70,11 @@ var charangoModule = angular.module('app', []).
 		
 		$scope.drawChord = function(id, notes){
 			var canvas = document.getElementById(id);
+			
+			if(canvas == null){
+				return;
+			}
+			
 			var ctx = canvas.getContext("2d");
 			
 			ctx.clearRect(0,0,canvas.width, canvas.height);
