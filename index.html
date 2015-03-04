@@ -54,6 +54,7 @@
 			
 			<div id="chords-view" class="view" style="max-width:none;" ng-show="view == 'chords'">
 				<h1>Chords</h1>
+				<p>Please type in the chord you are looking for:</p>
 				<input type="text" ng-model="searchNote" ng-keyup="waitDrawAll()" />
 				
 				<div class="chord-container" ng-repeat="chord in chords | filter:getSearchText()">
