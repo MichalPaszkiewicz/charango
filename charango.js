@@ -133,6 +133,7 @@ var charangoModule = angular.module('app', []).
 			{name:"E", notes:[1,4,0,2,0]},
 			{name:"Em", notes:[0,4,3,2,0]},
 			{name:"F", notes:[2,0,1,0,1]},
+			{name:"Fm", notes:[1,5,4,3,1],
 			{name:"F#/Gb", notes:[3,1,2,1,2]},
 			{name:"F#m/Gbm", notes:[2,1,2,0,2]},
 			{name:"G", notes:[0,2,3,2,3]},
