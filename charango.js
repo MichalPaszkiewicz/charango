@@ -1,3 +1,5 @@
+var logs = [];
+
 var charangoModule = angular.module('app', []).
 	controller("pageControl", function pageControl($scope, $timeout){
 
@@ -140,13 +142,19 @@ var charangoModule = angular.module('app', []).
 		];
 		
 		$scope.drawAllChords = function(){
-			for(var i in $scope.chords){
-				var notes = [];
-				for(var j in $scope.chords[i].notes){
-					notes.push({value: $scope.chords[i].notes[j]});
-				}
+			try{
+				for(var i in $scope.chords){
+					var notes = [];
+					for(var j in $scope.chords[i].notes){
+						notes.push({value: $scope.chords[i].notes[j]});
+					}
 				
-				$scope.drawChord($scope.chords[i].name, notes)
+					$scope.drawChord($scope.chords[i].name, notes)
+				}
+			}
+			catch(e)
+			{
+				logs.push(e);
 			}
 		}
 		
