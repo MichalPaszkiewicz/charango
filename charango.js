@@ -76,7 +76,12 @@ var charangoModule = angular.module('app', []).
 				
 				ctx.beginPath();
 				ctx.arc(i*50 + 25,yPos,10,0,2*Math.PI);
-				ctx.fill();
+				if(notes[i].value == 0){
+					ctx.stroke();
+				}
+				else{
+					ctx.fill();
+				}
 			}
 			
 			for(var i = 0; i < 7; i++){
