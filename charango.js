@@ -163,6 +163,13 @@ var charangoModule = angular.module('app', []).
 			{"name":"Esus4","notes":[4,4,4,0,0]},
 			{"name":"Fsus4","notes":[2,0,1,1,1]},
 			{"name":"Gsus4","notes":[0,3,3,2,3]},
+			{"name":"Asus2","notes":[4,4,0,0,0]},
+			{"name":"Bsus2","notes":[6,6,2,2,2]},
+			{"name":"Csus2","notes":[0,2,3,3,3]},
+			{"name":"Dsus2","notes":[2,4,5,5,0]},
+			{"name":"Esus2","notes":[4,4,0,2,2]},
+			{"name":"Fsus2","notes":[2,0,1,3,3]},
+			{"name":"Gsus2","notes":[0,2,3,0,3]},
 			{"name":"A#/Bb","notes":[3,2,1,1,1]},
 			{"name":"C#/Db","notes":[1,1,1,4,1]},
 			{"name":"D#/Eb","notes":[3,3,3,6,3]},
@@ -192,8 +199,13 @@ var charangoModule = angular.module('app', []).
 			{"name":"C#sus4/Dbsus4","notes":[1,1,1,4,2]},
 			{"name":"D#sus4/Ebsus4","notes":[3,3,3,6,4]},
 			{"name":"F#sus4/Gbsus4","notes":[3,1,2,2,2]},
-			{"name":"G#sus4/Absus4","notes":[1,3,4,3,0]}
-		];
+			{"name":"G#sus4/Absus4","notes":[1,3,4,3,0]},
+			{"name":"A#sus2/Bbsus2","notes":[5,5,1,1,1]},
+			{"name":"C#sus2/Dbsus2","notes":[1,3,4,4,4]},
+			{"name":"D#sus2/Ebsus2","notes":[3,5,6,6,6]},
+			{"name":"F#sus2/Gbsus2","notes":[3,1,2,4,4]},
+			{"name":"G#sus2/Absus2","notes":[1,3,4,1,4]}
+		]
 		
 		$scope.drawAllChords = function(){
 			try{
