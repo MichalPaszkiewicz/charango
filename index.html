@@ -55,7 +55,7 @@
 			</div>
 			
 			<div id="chords-view" class="view" style="max-width:none;" ng-show="view == 'chords'">
-				<h1>({{chords.length}}) Chords</h1>
+				<h1>Chords</h1>
 				<p>Please type in the chord you are looking for:</p>
 				<input type="text" ng-model="searchNote" ng-keyup="waitDrawAll()" />
 				
@@ -91,6 +91,8 @@
 			<div id="about-view" class="view" ng-show="view == 'about'">
 				<h1>About</h1>
 				<p>Made by <a href="../" alt="Michal Paszkiewicz home site">Michal Paszkiewicz</a>, a keen charanguista (player of charangos), guitarist and software developer.</p>
+				<p>The chord library featured here contains {{chords.length}} chords!</p>
+				<p>Feel free to <a href="https://github.com/MichalPaszkiewicz/charango/issues">comment on</a> or <a href="https://github.com/MichalPaszkiewicz/charango">contribute to</a> this project via the github page</p>
 				<p>Download the mobile app by clicking <a href="charango-phone.apk">here</a>!</p>
 			</div>
 			
