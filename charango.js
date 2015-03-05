@@ -115,7 +115,7 @@ var charangoModule = angular.module('app', []).
 				linkString += $scope.customChord.strings[string].value + "+";
 			}
 			
-			linkString += "&label=" + $scope.customChord.label;
+			linkString += "&label=" + $scope.customChord.label.replace(" ", "_");
 			
 			return linkString;
 		}
