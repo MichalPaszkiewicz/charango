@@ -78,7 +78,7 @@
 					<p>Label:</p>
 					<input type="text" ng-model="customChord.label"/>
 					<p>Frets:</p>
-					<div style="width: 25px" ng-repeat="string in customChord.strings">
+					<div style="width: 50px; display: inline-block;" ng-repeat="string in customChord.strings">
 						<input type="number" min=0  ng-model="string.value"/>
 					</div>
 					<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
