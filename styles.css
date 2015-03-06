@@ -152,4 +152,15 @@ input[type*=number]{
 	text-transform: uppercase;
 }
 
+.fret-button{
+	text-align: center;
+	background: rgba(140,140,140,0.5);
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.fret-button:hover{
+	background: rgba(100,100,100,0.5);
+}
 
