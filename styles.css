@@ -165,6 +165,7 @@ input[type*=number]{
 	display: inline-block;
 	text-align: center;
 	margin-right: 5px;
+	vertical-align: top;
 }
 
 .fret-button:hover{
@@ -172,5 +173,7 @@ input[type*=number]{
 }
 
 .fret-display{
-	
+	background: rgba(126, 166, 126,0.1);
+	border-radius: 10px;
+	margin: 5px 0;
 }
