@@ -81,7 +81,7 @@
 					<div class="fret-control" ng-repeat="string in customChord.strings">
 						<div class="fret-button" ng-show="string.value < 6" ng-click="string.value = string.value + 1">/\</div>
 						<div class="fret-display">{{string.value}}</div>
-						<div class="fret-button" ng-show="string.value > -1" ng-click="string.value = string.value - 1">\/</div>
+						<div class="fret-button" ng-show="string.value > 0" ng-click="string.value = string.value - 1">\/</div>
 					</div>
 					<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
 					<canvas id="custom-chord" height=300 width=250></canvas>
