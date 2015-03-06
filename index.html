@@ -79,9 +79,9 @@
 					<input type="text" ng-model="customChord.label"/>
 					<p>Frets:</p>
 					<div style="width: 50px; display: inline-block;" ng-repeat="string in customChord.strings">
-						<div style="text-align:center;" ng-click="string.value++">/\</div>
+						<div style="text-align:center;" ng-click="string.value = string.value + 1">/\</div>
 						<input type="number" min=0  ng-model="string.value"/>
-						<div style="text-align:center;" ng-click="string.value--">\/</div>
+						<div style="text-align:center;" ng-click="string.value = string.value - 1">\/</div>
 					</div>
 					<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
 					<canvas id="custom-chord" height=300 width=250></canvas>
