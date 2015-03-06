@@ -160,6 +160,11 @@ input[type*=number]{
 	border-radius: 10px;
 }
 
+.fret-control{
+	width: 50px; 
+	display: inline-block;
+}
+
 .fret-button:hover{
 	background: rgba(100,100,100,0.5);
 }
