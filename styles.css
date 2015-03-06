@@ -161,8 +161,10 @@ input[type*=number]{
 }
 
 .fret-control{
-	width: 50px; 
+	width: 45px;
 	display: inline-block;
+	text-align: center;
+	margin-right: 5px;
 }
 
 .fret-button:hover{
