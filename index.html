@@ -61,7 +61,7 @@
 				<input type="text" ng-model="searchNote" ng-keyup="waitDrawAll()" />
 				
 				<div class="chord-container" ng-repeat="chord in chords | filter:getSearchText()">
-					<h1>{{chord.name}}</h1>
+					<h1 class="chord-name">{{chord.name}}</h1>
 					<div>
 						<b class="string-name" ng-repeat="string in customChord.strings">{{string.tuning}}</b>
 						<canvas id="{{chord.name}}" height=300 width=250></canvas>
